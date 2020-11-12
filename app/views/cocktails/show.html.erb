@@ -3,6 +3,9 @@
 <h2>Doses</h2>
 <ul>
   <% @doses.each do |dose|%>
-    <li><%= dose.description %> - <%= Ingredient.find(dose.ingredient_id).name %></li>
+    <li><%= dose.description %> - <%= Ingredient.find(dose.ingredient_id).name %> - <%= link_to "Delete", dose_path(dose), method: :delete %></li>
   <% end %>
 </ul>
+<%= link_to "Add new dose", new_cocktail_dose_path(@cocktail) %>
+<hr>
+<%= link_to "Back to list of cocktails", cocktails_path %>
