@@ -1,0 +1,55 @@
+.cards {
+  display : grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 16px;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.cocktail-card {
+  align-items: flex-end;
+  background-color: white;
+  transition: transform 0.2s ease;
+  height: 230px;
+  &:hover {
+    transform: translate(0px, -1px);
+  }
+
+  h2 {
+    text-decoration: none;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-left: 1px solid black;
+    padding-left: 8px;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    height: 100%;
+    font-size: 1.5rem;
+  }
+    
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      font-size: 0.5rem;
+    }
+  }
+  .cocktail-card-img {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+    svg {
+      fill: red;
+    }
+  }
+  img {
+    height: 100%;
+  }
+}
+

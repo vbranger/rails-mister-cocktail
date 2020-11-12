@@ -1,0 +1,60 @@
+.spritz-flex {
+  display: grid;
+  height: 165px;
+  width: 200px;
+}
+
+.tumbler-flex {
+  display: grid;
+  height: 260px;
+  width: 100px;
+}
+
+.old-fashioned-flex {
+  display: grid;
+  height: 200px;
+  width: 150px;
+}
+
+
+.martini-flex {
+  display: grid;
+  height: 150px;
+  width: 250px;
+}
+
+.martini-wrapper {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 0px;
+    fill: white;
+  }
+}
+
+.spritz-wrapper {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 0px;
+    fill:white;
+  }
+}
+
+.old-fashioned-wrapper {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  svg {
+    display: none;
+  }
+}
+
+.tumbler-wrapper {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  svg {
+    display: none;
+  }
+}

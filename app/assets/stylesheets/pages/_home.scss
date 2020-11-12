@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+body {
+  background-color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.black {
+  background-color: black;
+}
+
+.min-vport {
+  min-height: 80vh;
+}

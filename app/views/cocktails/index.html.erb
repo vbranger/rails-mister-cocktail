@@ -1,11 +1,59 @@
-<h1>List of cocktails</h1>
+<div class="container bg-dark p-5 min-vport">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail_path(cocktail) do %>
+        <div class="cocktail-card d-flex p-3">
+          <h2 class="text-dark no-flickr"><%= cocktail.name %></h2>
+          <div class="cocktail-card-img">
+            <%= image_tag 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80' %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
 
-<hr>
 
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+
+
+
+<%# <div class="container bg-dark p-5">
+  <div class="cards">
+    <div class="cocktail-card d-flex p-3">
+        <h2>Bloody Mary</h2>
+      <div class="cocktail-card-img"> %>
+        <%# <%= image_tag 'https://i.ibb.co/8jSrNP5/bloody-mary.png' %>
+      <%# </div>
+    </div>
+    <div class="cocktail-card d-flex p-3">
+        <h2>Margarita</h2>
+      <div class="cocktail-card-img"> %>
+        <%# <%= image_tag 'https://i.ibb.co/5R2yzGY/margarita.png' %>
+      <%# </div>
+    </div>
+  </div>
+</div> %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <%# <ul>
+        <li>2 OUNCES VODKA</li>
+        <li>4 OUNCES TOMATO JUICE</li>
+        <li>1/2 TABLESPOON LEMON JUICE</li>
+        <li>1 SPLASH WORCESTHERSHIRE SAUCE</li>
+        <li>3 TO 4 DASHES TABASCO</li>
+        <li>1 TEASPOON HORSERADISH</li>
+        <li>STALK OF CELERY</li>
+      </ul> %>

@@ -1,10 +1,10 @@
 <div class="container">
-  <h1>Create a new cocktail</h1>
+  <h1>Edit cocktail</h1>
   <%= simple_form_for(@cocktail) do |f| %>
     <%= f.input :name %>
     <%= f.input :glass_type, collection: [['High ball', 'tumbler'], ['Old-fashioned', 'old-fashioned'], ['Martini', 'martini'], ['Spritz', 'spritz']], label_method: :first, value_method: :second, as: :radio_buttons, wrapper: :custom_collection_inline %>
     <%= f.submit %>
   <% end %>
   <hr>
-  <%= link_to "Back", cocktails_path %>
+  <%= link_to "Back", cocktail_path(@cocktail) %>
 </div>
