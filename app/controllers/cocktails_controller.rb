@@ -12,8 +12,8 @@ class CocktailsController < ApplicationController
   def show
     @doses = Dose.where(cocktail_id: params[:id])
     @cocktail = Cocktail.find(params[:id])
+    @background_color = main_background_color(@doses)
     if @doses.length != 0
-      @background_color = main_background_color(@doses)
       @fractions = ratio(@doses)
     end
   end
@@ -49,8 +49,11 @@ class CocktailsController < ApplicationController
   end
 
   def main_background_color(doses)
+    if doses.length == 0
+      return '#f2f2f2'
+    end
     lum = []
-    colors = []
+    colors = ['#f2f2f2']
     doses.each do |dose|
       color = Color.new(Ingredient.find(dose.ingredient_id).color)
       colors << Ingredient.find(dose.ingredient_id).color

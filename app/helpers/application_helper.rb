@@ -10,6 +10,8 @@ module ApplicationHelper
         lum << color.l
       end
       return colors[lum.index(lum.min)]
+    else
+      return '#8a8a8a'
     end
   end
 

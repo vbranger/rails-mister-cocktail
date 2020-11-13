@@ -1,5 +1,5 @@
 {"drinks": [ { "strIngredient1": "Light rum",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Applejack",
@@ -7,7 +7,7 @@
     },
     {
     "strIngredient1": "Gin",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Dark rum",
@@ -31,7 +31,7 @@
     },
     {
     "strIngredient1": "Triple sec",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Southern Comfort",
@@ -79,11 +79,11 @@
     },
     {
     "strIngredient1": "Tequila",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Vodka",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Añejo rum",
@@ -95,7 +95,7 @@
     },
     {
     "strIngredient1": "Sugar",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Kahlua",
@@ -127,7 +127,7 @@
     },
     {
     "strIngredient1": "Carbonated water",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Cherry brandy",
@@ -191,11 +191,11 @@
     },
     {
     "strIngredient1": "Sugar syrup",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Milk",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Strawberries",
@@ -259,11 +259,11 @@
     },
     {
     "strIngredient1": "Peach Vodka",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Ouzo",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Coffee",
@@ -275,7 +275,7 @@
     },
     {
     "strIngredient1": "Water",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Espresso",
@@ -303,7 +303,7 @@
     },
     {
     "strIngredient1": "Everclear",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Cranberry juice",
@@ -347,11 +347,11 @@
     },
     {
     "strIngredient1": "Absolut Citron",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Pisco",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Irish cream",
@@ -371,7 +371,7 @@
     },
     {
     "strIngredient1": "Sambuca",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Cider",
@@ -379,11 +379,11 @@
     },
     {
     "strIngredient1": "Sprite",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "7-Up",
-    "color": "#FFFFFF"
+    "color": "#f5f5f5"
     },
     {
     "strIngredient1": "Blackberry brandy",
@@ -391,7 +391,7 @@
     },
     {
       "strIngredient1": "Peppermint schnapps",
-      "color": "#FFFFFF"
+      "color": "#f5f5f5"
     },
     {
       "strIngredient1": "Creme de Cassis",
