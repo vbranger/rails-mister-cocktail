@@ -53,7 +53,7 @@ class CocktailsController < ApplicationController
       return '#f2f2f2'
     end
     lum = []
-    colors = ['#f2f2f2']
+    colors = []
     doses.each do |dose|
       color = Color.new(Ingredient.find(dose.ingredient_id).color)
       colors << Ingredient.find(dose.ingredient_id).color
