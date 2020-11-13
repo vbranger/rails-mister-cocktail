@@ -79,7 +79,7 @@
     },
     {
     "strIngredient1": "Tequila",
-    "color": "#FFE696"
+    "color": "#FFFFFF"
     },
     {
     "strIngredient1": "Vodka",
@@ -396,6 +396,10 @@
     {
       "strIngredient1": "Creme de Cassis",
       "color": "#674191"
+    },
+    {
+      "strIngredient1": "Aperol",
+      "color": "#E24624"
     }
   ]
 }

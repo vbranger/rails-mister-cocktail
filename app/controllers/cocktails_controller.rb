@@ -9,6 +9,7 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.find(params[:id])
     if @doses.length != 0
       @background_color = main_background_color(@doses)
+      @fractions = ratio(@doses)
     end
   end
 
@@ -51,6 +52,18 @@ class CocktailsController < ApplicationController
       lum << color.l
     end
     return colors[lum.index(lum.min)]
+  end
+
+  def ratio(doses)
+    fractions = []
+    doses.each do |dose|
+      unit = Unit.find(dose.unit_id).value
+      quantity = dose.quantity
+      total = unit * quantity.to_f
+      fractions << "#{total}fr"
+    end
+    return fractions.join(" ")
+    # return a string like : '128fr 64fr 8fr 4fr 5.33fr'
   end
 
 end
