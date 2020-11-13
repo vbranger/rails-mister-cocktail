@@ -1,6 +1,8 @@
-<%= simple_form_for [ @cocktail, @dose ] do |f| %>
+<div class="container">
+  <%= simple_form_for [ @cocktail, @dose ] do |f| %>
   <%= f.input :quantity %>
   <%= f.association :unit %>
   <%= f.association :ingredient %>
   <%= f.submit %>
-<% end %>
+  <% end %>
+</div>

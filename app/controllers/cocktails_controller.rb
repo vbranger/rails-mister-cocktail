@@ -1,5 +1,10 @@
 class CocktailsController < ApplicationController
 
+  def random_3
+    @cocktails = Cocktail.all
+    @cocktails = @cocktails.shuffle[0..2]
+  end
+
   def index
     @cocktails = Cocktail.all
   end

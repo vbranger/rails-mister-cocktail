@@ -1,11 +1,20 @@
-<div class="container bg-dark p-5 min-vport">
-  <div class="cards">
+<div class="d-flex align-items-center justify-content-center home-banner p-5">
+  <h2>Create and design minimalist cocktails</h2>
+</div>
+
+<div class="container bg-dark pt-3 pb-4 px-5 min-vport">
+  <div class="d-flex align-items-center justify-content-center">
+    <p>
+      <span id="banner-typed-text" class="text-white"></span>
+    </p>
+  </div>
+  
+  <div class="cards-random">
     <% @cocktails.each do |cocktail| %>
       <%= link_to cocktail_path(cocktail) do %>
         <div class="cocktail-card d-flex p-3">
-          <h2 class="text-dark no-flickr"><%= cocktail.name %></h2>
+          <h2 class="text-dark hide"><%= cocktail.name %></h2>
           <div class="cocktail-card-img">
-          
             <div class="<%= cocktail.glass_type %>-wrapper">
             <% doses = Cocktail.find(cocktail.id).doses %>
               <div class="<%= cocktail.glass_type %>-flex" style="grid-template-rows: <%= ratio(doses) %>; background-color: <%= main_background_color(doses) %>">
@@ -22,21 +31,11 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 65V0H24.0042C9.03899 17.4803 0 40.1846 0 65ZM100 165H0V65C0 120.228 44.7715 165 100 165ZM200 65V165H100C155.228 165 200 120.228 200 65ZM175.996 0C190.961 17.4803 200 40.1846 200 65V0H175.996Z"/>
                 </svg>
               <% end %>
-            </div>
-          
-          
+            </div>        
           </div>
         </div>
       <% end %>
     <% end %>
+
   </div>
 </div>
-
-
-
-
-
-
-
-
-

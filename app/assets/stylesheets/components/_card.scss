@@ -1,6 +1,6 @@
 .cards {
   display : grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 16px;
   a {
@@ -10,6 +10,29 @@
   }
 }
 
+
+.cards-random {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 16px;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.cocktail-card:hover .hide {
+  display: block;
+  color: red;
+}
+
+
 .cocktail-card {
   align-items: flex-end;
   background-color: white;
@@ -18,7 +41,7 @@
   // &:hover {
   //   transform: translate(0px, -1px);
   // }
-
+  
   h2 {
     text-decoration: none;
     margin: 0;
@@ -51,3 +74,8 @@
   }
 }
 
+.scene {
+  width: 200px;
+  height: 300px;
+  perspective: 600px;
+}

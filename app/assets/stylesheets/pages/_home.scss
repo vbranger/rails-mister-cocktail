@@ -4,13 +4,13 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-h1 {
+h1, h2, h3, p, a {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 .black {
   background-color: black;
 }
 
-.min-vport {
-  min-height: 80vh;
-}
+// .min-vport {
+//   min-height: 80vh;
+// }
