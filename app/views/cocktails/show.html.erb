@@ -1,3 +1,4 @@
+
 <div class="container">
   <div class="d-flex justify-content-between">
     <div>
@@ -9,9 +10,9 @@
 
 
     <div class="<%= @cocktail.glass_type %>-wrapper">
-      <div class="<%= @cocktail.glass_type %>-flex" style="grid-template-rows: repeat(<%= @doses.count %>, 1fr)">
+      <div class="<%= @cocktail.glass_type %>-flex" style="grid-template-rows: repeat(<%= @doses.count %>, 1fr); background-color: <%= @background_color %>">
         <% @doses.each do |dose|%>
-          <div style="background-color: <%= Ingredient.find(dose.ingredient_id).color %>"></div>
+          <div style="background-color: <%= Ingredient.find(dose.ingredient_id).color %>; opacity: 0.8"></div>
         <% end %>
       </div>
       <% if @cocktail.glass_type == 'martini' %>
