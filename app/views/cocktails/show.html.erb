@@ -30,7 +30,7 @@
   
   <hr>
   <h2>Doses</h2>
-  <ul>
+  <ul id="doses" >
     <% @doses.each do |dose|%>
       <li><%= dose.quantity %> <%= Unit.find(dose.unit_id).name %> - <%= Ingredient.find(dose.ingredient_id).name %> - <%= link_to "Delete", dose_path(dose), method: :delete %></li>
     <% end %>

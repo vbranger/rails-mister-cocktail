@@ -5,7 +5,32 @@
         <div class="cocktail-card d-flex p-3">
           <h2 class="text-dark no-flickr"><%= cocktail.name %></h2>
           <div class="cocktail-card-img">
-            <%= image_tag 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80' %>
+            <%# <%= image_tag 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80' %>
+          
+
+            <div class="<%= cocktail.glass_type %>-wrapper">
+            <% doses = Cocktail.find(cocktail.id).doses %>
+              <div class="<%= cocktail.glass_type %>-flex" style="grid-template-rows: <%= ratio(doses) %>; background-color: <%= main_background_color(doses) %>">
+                <% doses.each do |dose|%>
+                  <div style="background-color: <%= Ingredient.find(dose.ingredient_id).color %>; opacity: 0.5"></div>
+                <% end %>
+              </div>
+              <% if cocktail.glass_type == 'martini' %>
+                <svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7468 0H0V150H125H250V0H233.253L125 150L16.7468 0Z"/>
+                </svg>
+              <% elsif cocktail.glass_type == 'spritz' %>
+                <svg width="200" height="165" viewBox="0 0 200 165" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 65V0H24.0042C9.03899 17.4803 0 40.1846 0 65ZM100 165H0V65C0 120.228 44.7715 165 100 165ZM200 65V165H100C155.228 165 200 120.228 200 65ZM175.996 0C190.961 17.4803 200 40.1846 200 65V0H175.996Z"/>
+                </svg>
+              <% end %>
+            </div>
+          
+          
+          
+          
+          
+          
           </div>
         </div>
       <% end %>

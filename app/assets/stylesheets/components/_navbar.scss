@@ -1,7 +1,11 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-}
+  font-family: 'IBM Plex Sans', sans-serif;
+  .navbar-brand {
+    font-weight: 700;
+  }
+ }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;

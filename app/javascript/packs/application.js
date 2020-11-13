@@ -8,3 +8,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 import 'bootstrap';
+import { initSortable } from '../components/doses'
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  // [...]
+  initSortable();
+});

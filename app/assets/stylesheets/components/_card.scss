@@ -14,10 +14,10 @@
   align-items: flex-end;
   background-color: white;
   transition: transform 0.2s ease;
-  height: 230px;
-  &:hover {
-    transform: translate(0px, -1px);
-  }
+  height: 300px;
+  // &:hover {
+  //   transform: translate(0px, -1px);
+  // }
 
   h2 {
     text-decoration: none;
@@ -42,11 +42,9 @@
   .cocktail-card-img {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
     height: 100%;
-    svg {
-      fill: red;
-    }
   }
   img {
     height: 100%;
